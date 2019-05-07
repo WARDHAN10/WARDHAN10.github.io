@@ -15,7 +15,7 @@ var messages=firebase.database().ref('message');
 document.getElementById('contact_form').addEventListener('submit',submitform);
 
 function submitform(e){
-
+console.log(e);
     e.preventDefault();
     console.log(123);
 var firstname=getinputval('firstname');
@@ -46,10 +46,11 @@ console.log(email,confirm_password)
     }
     console.log(error);
   });
-
-window.location="cong.html"
 console.log("hi");
 firebase.auth().signOut();
+
+setTimeout("window.location='wardhan.github.io'",5000);
+
 }
 else{
 console.log("no");
