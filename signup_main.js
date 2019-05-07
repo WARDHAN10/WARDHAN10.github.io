@@ -49,7 +49,7 @@ console.log(email,confirm_password)
 console.log("hi");
 firebase.auth().signOut();
 
-setTimeout("window.location='wardhan.github.io'",5000);
+setTimeout("window.location='index.html'",5000);
 
 }
 else{
